@@ -1,4 +1,4 @@
-@import '~bulma/bulma.sass';
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 // BRAND COLOURS
@@ -19,12 +19,17 @@ body {
   max-width: 1000px;
   margin: auto;
   box-shadow: 1px 1px;
+  
 
 
   .container {
-    max-width: 1000px;
-    display: flex;
+    // max-width: 1000px;
+    // display: block;
     justify-content: space-evenly;
+  }
+
+  .is-active {
+    margin-left: 20px;
   }
 
   .navbar-brand {
@@ -32,29 +37,57 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    // align-items: flex-start;
+    align-items: flex-start;
     margin: 10px;
     margin-left: 20px;
     font-size: 40;
     max-width: 1000px;
 
-    .navbar-item {
-      display: flex;
-      margin-right: 20px;
+    .title {
+      // height: 25px;
+      // width: 40px;
+      height: 40px;
+      align-items: left;
+      text-align: center;
+      margin-top: 20px;
+      // margin-bottom: 15px;
 
-      // .nav-button {
-      //   padding: 10px;
-      // }
-    }
-    .nav-button:hover {
-      // text-decoration: underline;
-      border-bottom: 1px solid;
-      padding-bottom: 0px;
-      color: $brand-dark-green;
-  
-  
     }
   }
+  .navbar-item {
+    all: unset;
+    display: flex;
+    align-items: center;
+    margin: 10px 20px 10px 20px;
+    font-size: 40;
+    max-width: 1000px;
+
+    // .nav-button {
+    //   padding: 10px;
+    // }
+  }
+  .nav-button {
+    all: unset;
+    color: $brand-dark-green;
+  }
+
+  .is-active {
+    padding-top: 40px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .nav-button:hover {
+    all: unset;
+    display: flex;
+    align-items: center;
+    // margin: 0 20px 0 20px;
+    font-size: 40;
+    max-width: 1000px;
+    border-bottom: 1px solid;
+    color: $brand-green;
+    padding-bottom: -50px;
+  }  
   
 }
 
@@ -66,7 +99,7 @@ section {
   display: flex;
   flex-direction: column;
   color: $brand-green;
-
+  padding-top: 90px;
 }
 
 .about-section {
@@ -75,7 +108,7 @@ section {
   margin: 0 auto;
   margin-top: 100px;
   // background-color: pink;
-  padding-top: 50px;
+  padding-top: 100px;
   width: 100%;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -110,29 +143,73 @@ section {
 
 .technologies-section {
   // background-color: black;
-  color: $brand-dark-green;
+  color: $brand-green;
+  padding-top: 130px;
+  
+
+  .heading {
+    padding-bottom: 5px;
+  }
 
   .technologies-wrapper {
-    padding-top: 50px;
-    width: 80%;
+    // padding-top: 50px;
+        // align-content: center;
+    max-width: 900px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    
-    margin: 0 auto;
+    // justify-content: space-evenly;
+    margin: auto;
     flex-wrap: wrap;
-    // align-content: center;
+    align-content: center;
 
     .tech-block {
-      max-width: 400px;
-      min-width: 300px;
-      padding: 20px;
-      margin: 20px;
+      max-width: 200px;
+      min-width: 150px;
+      padding: 10px;
+      margin: 10px;
+      align-content: flex-start;
+      
+      
       // background-color: white;
+    //   max-width: 400px;
+    // min-width: 300px;
+    // padding: 20px;
+    // margin: 20px;
+      background-color: $brand-green;
+      color: white;
+      min-height: 200px;
 
       .tech-subtitle {
-        font-weight: 200;
-        color: black;
+        font-size: 1em;
+        line-height: 1.5;
+        padding-left: 10px;
+        font-weight: bold;
+        margin-top: 20px;
+        
+      }
+      
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5px;
+        // justify-content: space-between;
+        align-items: center;
+        color: $brand-dark-green;
+        font-size: 0.83em;
+        line-height: 2;
+        margin-top: 5px;
+        // margin-block-start: 1.67em;
+        // margin-block-end: 1.67em;
+        // margin-inline-start: 0px;
+        // margin-inline-end: 0px;
+        font-weight: bold;
+        li {
+          padding: 0 5px 0 5px;
+          // align-items: center;
+          // align-content: center;
+          justify-content: space-between;
+          
+        }
       }
     }
   }
@@ -141,9 +218,10 @@ section {
 .projects-section {
   // background-color: red;
   color: $brand-green;
+  padding-top: 130px;
 
   .projects-wrapper {
-    padding-top: 50px;
+    // padding-top: 50px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -206,6 +284,7 @@ section {
   }
 
 .contact-section {
+  // padding-top: 250px;
 
   .name {
     display: flex;
@@ -230,17 +309,31 @@ section {
         height: 40;
         fill: $brand-dark-green;
       }
+      SVG:HOVER {
+        fill: $brand-green;
+      }
     }
   }
 }
 
+// (max-width: 440px)() {
 
+// }
 // MEDIA QUERIES
 
 //media queries for index pages
 @media only screen and (max-width: 800px) {
-  .tech-subsection {
+
+  .technologies-wrapper {
+    justify-content: flex-start;
+    margin: auto;
+    width: 440px; 
+    // align-items: flex-start;
+    
+  }
+  .tech-block {
     width: 50%;
+    align-items: flex-start;
   }
 
   .about-section {
@@ -255,6 +348,11 @@ section {
   
 }
 @media only screen and (max-width: 550px) {
+
+  .technologies-wrapper {
+    justify-content: center;
+    // max-width: 400px;
+  }
   .tech-subsection {
     width: 100%;
   }
@@ -266,6 +364,10 @@ section {
   }
 }
 @media only screen and (max-width: 625px) {
+
+  .technologies-wrapper {
+    justify-content: center;
+  }
   .tech-subsection {
     width: 100%;
   }
@@ -274,5 +376,25 @@ section {
   div {
     width: 100%;
   }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    width: 95%;
+    section {
+      width: 100%;
+      margin: 0;
+    }
+    .contact-section {
+      text-align: center;
+    }
+    
+    .technologies-wrapper {
+      width: 100%;
+      .tech-block {
+        width: 80%;
+      }
+    }
   }
 }

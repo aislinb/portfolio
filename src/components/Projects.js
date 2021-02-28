@@ -4,8 +4,8 @@ import React from 'react'
 
 function Projects() {
   return (
-    <section className="projects-section">
-      <div className="heading">Projects section</div>
+    <section className="projects-section" id="projects-section">
+      <div className="heading">PROJECTS I HAVE WORKED ON</div>
       <div className="projects-wrapper">
         <div className="project-block">
           <div className="project-title">MY NATOORA</div>

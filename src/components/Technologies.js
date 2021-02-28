@@ -4,17 +4,17 @@ import React from 'react'
 
 function Technologies() {
   return (
-    <section className="technologies-section">
-      <div className="heading">Technologies I know section</div>
+    <section className="technologies-section" id="technologies-section">
+      <div className="heading">TECHNOLOGIES I LIKE USING</div>
       <div className="technologies-wrapper">
         <div className="tech-block">
-          <div className="tech-subtitle">Technologies:</div>
+          <div className="tech-subtitle">TECH</div>
           <ul>
             <li>HTML</li>
             <li>CSS</li>
             <li>SASS</li>
             <li>Bulma</li>
-            <li>JavaScript(ES6)</li>
+            <li>JavaScript (ES6)</li>
             <li>React</li>
             <li>Express</li>
             <li>Node.js</li>
@@ -23,7 +23,7 @@ function Technologies() {
           </ul>
         </div>
         <div className="tech-block">
-          <div className="tech-subtitle">Databases:</div>
+          <div className="tech-subtitle">DATABASES</div>
           <ul>
             <li>Structured Query Language (SQL)</li>
             <li>MongoDB</li>
@@ -31,7 +31,7 @@ function Technologies() {
           </ul>
         </div>
         <div className="tech-block">
-          <div className="tech-subtitle">Storage and Version Control:</div>
+          <div className="tech-subtitle">STORAGE & VERSION CONTROL</div>
           <ul>
             <li>Git</li>
             <li>GitHub</li>
@@ -39,7 +39,7 @@ function Technologies() {
           </ul>
         </div>
         <div className="tech-block">
-          <div className="tech-subtitle">Package Managers:</div>
+          <div className="tech-subtitle">PACKAGE MANAGERS</div>
           <ul>
             <li>Yarn</li>
             <li>Axios</li>
@@ -49,7 +49,7 @@ function Technologies() {
           </ul>
         </div>
         <div className="tech-block">
-          <div className="tech-subtitle">Tools:</div>
+          <div className="tech-subtitle">TOOLS</div>
           <ul>
             <li>TablePlus</li>
             <li>Insomnia</li>
