@@ -78,9 +78,9 @@ body {
   }
 
   .is-active {
-    // padding-top: 40px;
+    padding: 4px;
     width: 100%;
-    // margin: 0;
+    margin: -5px;
   }
 
   .nav-button:hover {
@@ -104,7 +104,12 @@ body {
     align-items: right;
     display: flex;
   }
-  
+  .navbar-menu {
+    .is-active {
+      margin: -5px;
+      height: 100%;
+    }
+  }
 }
 
 // BODY 
@@ -192,6 +197,8 @@ section {
     flex-wrap: wrap;
     // align-content: center;
     padding-bottom: 50px;
+    justify-content: flex-start;
+    margin: 0 50px;
 
     .tech-block {
       background-color: white;
@@ -199,7 +206,7 @@ section {
       min-width: 150px;
       padding: 10px;
       margin: 10px;
-      align-content: flex-start;
+      align-items: flex-end;
       color: white;
       min-height: 200px;
 
@@ -386,7 +393,8 @@ section {
     }
 
   .technologies-wrapper {
-    justify-content: center;
+    justify-content: flex-start;
+    margin: auto;
     // max-width: 400px;
   }
   .tech-subsection {
@@ -397,10 +405,12 @@ section {
 @media only screen and (max-width: 625px) {
 
   .technologies-wrapper {
-    justify-content: center;
+    justify-content: flex-start;
+    margin: auto;
   }
   .tech-subsection {
     width: 100%;
+    margin: auto;
   }
 
   .about-section {
@@ -438,6 +448,8 @@ section {
     
     .technologies-wrapper {
       width: 100%;
+      justify-content: flex-start;
+      margin: auto;
       .tech-block {
         width: 80%;
       }
