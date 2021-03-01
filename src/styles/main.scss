@@ -7,18 +7,18 @@ $brand-dark-green:  #008037;
 $brand-navy:  #150941;
 
 body {
-  // background-color: $brand-green;
+
   font-family: 'Roboto', sans-serif;
   padding-bottom: 100px;
 }
 
 .navbar {
-  height: 100px;
+  height: 70px;
   // background-color: $brand-green;
   color: $brand-green;
   max-width: 1000px;
   margin: auto;
-  box-shadow: 1px 1px;
+  box-shadow: 1px 1px blur;
   
 
 
@@ -33,25 +33,31 @@ body {
   }
 
   .navbar-brand {
-    
+    margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 10px;
-    margin-left: 20px;
+    margin: 10px 20px 10px 20px; 
+    // * above will move the position of green circle within its navbar div *
     font-size: 40;
     max-width: 1000px;
-
+    justify-content: space-between;
     .title {
-      // height: 25px;
-      // width: 40px;
-      height: 40px;
-      align-items: left;
-      text-align: center;
-      margin-top: 20px;
-      // margin-bottom: 15px;
-
+      all: unset;
+      margin-left: 25px;
+      width: 25px;
+      height: 25px;
+      background-color: $brand-green;
+      color:$brand-green;
+      border-radius: 50%;
+      border: none;
+    }
+    .title:hover {
+      margin-left: 25px;
+      width: 25px;
+      height: 25px;
+      background-color: $brand-dark-green;
+      color:$brand-green;
+      border-radius: 50%;
     }
   }
   .navbar-item {
@@ -72,9 +78,9 @@ body {
   }
 
   .is-active {
-    padding-top: 40px;
+    // padding-top: 40px;
     width: 100%;
-    margin: 0;
+    // margin: 0;
   }
 
   .nav-button:hover {
@@ -87,9 +93,21 @@ body {
     border-bottom: 1px solid;
     color: $brand-green;
     padding-bottom: -50px;
-  }  
+  }
+
+  .navbar-burger {
+    max-width: 40px;
+    align-items: right;
+  }
+  .navbar-burger-is-active {
+    max-width: 40px;
+    align-items: right;
+    display: flex;
+  }
   
 }
+
+// BODY 
 
 section {
   max-width: 1000px;
@@ -99,8 +117,10 @@ section {
   display: flex;
   flex-direction: column;
   color: $brand-green;
-  padding-top: 90px;
+  // padding-top: 90px;
 }
+
+// ABOUT ME
 
 .about-section {
   display: flex;
@@ -108,13 +128,13 @@ section {
   margin: 0 auto;
   margin-top: 100px;
   // background-color: pink;
-  padding-top: 100px;
+  padding-top: 20px;
   width: 100%;
   justify-content: space-evenly;
   flex-wrap: wrap;
 
   div {
-    margin: 20px;
+    margin: 40px;
     width: 400px;
     // min-width: 300px;
   }
@@ -128,54 +148,58 @@ section {
     // justify-content: flex-start;
     // align-items: flex-start;
     h1 {
-      font-size: 60px;
+      font-size: 50px;
       
     }
     h3 {
       padding-top: 20px;
+      font-size: 30px;
+      font-weight: 600;
     }
   }
-  .about-me {
-    margin: 40px;
-  }
+  // .about-me {
+  //   margin: 40px;
+  // }
 
 }
 
+//  TECH I LIKE
+
 .technologies-section {
   // background-color: black;
-  color: $brand-green;
-  padding-top: 130px;
+  background-color: $brand-green;
+  padding-top: 30px;
+  margin-top: 30px;
+  
   
 
   .heading {
-    padding-bottom: 5px;
+    padding-bottom: 25px;
+    font-size: 100%;
+    font-weight: normal;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+    color: white;
   }
 
   .technologies-wrapper {
-    // padding-top: 50px;
-        // align-content: center;
+
     max-width: 900px;
     display: flex;
     flex-direction: row;
-    // justify-content: space-evenly;
     margin: auto;
     flex-wrap: wrap;
-    align-content: center;
+    // align-content: center;
+    padding-bottom: 50px;
 
     .tech-block {
+      background-color: white;
       max-width: 200px;
       min-width: 150px;
       padding: 10px;
       margin: 10px;
       align-content: flex-start;
-      
-      
-      // background-color: white;
-    //   max-width: 400px;
-    // min-width: 300px;
-    // padding: 20px;
-    // margin: 20px;
-      background-color: $brand-green;
       color: white;
       min-height: 200px;
 
@@ -185,23 +209,18 @@ section {
         padding-left: 10px;
         font-weight: bold;
         margin-top: 20px;
-        
+        color: $brand-dark-green;
       }
       
       ul {
         display: flex;
         flex-wrap: wrap;
         padding: 5px;
-        // justify-content: space-between;
         align-items: center;
-        color: $brand-dark-green;
+        color: $brand-green;
         font-size: 0.83em;
         line-height: 2;
         margin-top: 5px;
-        // margin-block-start: 1.67em;
-        // margin-block-end: 1.67em;
-        // margin-inline-start: 0px;
-        // margin-inline-end: 0px;
         font-weight: bold;
         li {
           padding: 0 5px 0 5px;
@@ -215,10 +234,21 @@ section {
   }
 }
 
+//  PROJECTS I HAVE WORKED ON
+
 .projects-section {
   // background-color: red;
   color: $brand-green;
-  padding-top: 130px;
+  padding-top: 100px;
+
+  .heading {
+    padding-bottom: 5px;
+    font-size: 100%;
+    font-weight: normal;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+  }
 
   .projects-wrapper {
     // padding-top: 50px;
@@ -283,13 +313,15 @@ section {
     }
   }
 
+  //  GET IN TOUCH 
+
 .contact-section {
-  // padding-top: 250px;
+  padding-top: 50px;
 
   .name {
     display: flex;
     justify-content: center;
-    margin: 40px 20px 20px 20px;;
+    margin: 40px 20px 20px 20px;
     font-size: 30px;
     
   }
@@ -324,7 +356,13 @@ section {
 //media queries for index pages
 @media only screen and (max-width: 800px) {
 
-  .technologies-wrapper {
+  .about-section {
+    div {
+      width: 100%;
+    }
+    }
+    
+    .technologies-wrapper {
     justify-content: flex-start;
     margin: auto;
     width: 440px; 
@@ -336,18 +374,16 @@ section {
     align-items: flex-start;
   }
 
-  .about-section {
-  div {
-    width: 50%;
-  }
-  .name {
-    padding: 0px;
-    margin: 40px;
-  }
-  }
+  
   
 }
 @media only screen and (max-width: 550px) {
+
+  .about-section {
+    div {
+      width: 100%;
+    }
+    }
 
   .technologies-wrapper {
     justify-content: center;
@@ -356,12 +392,7 @@ section {
   .tech-subsection {
     width: 100%;
   }
-
-  .about-section {
-  div {
-    width: 100%;
-  }
-  }
+  
 }
 @media only screen and (max-width: 625px) {
 
@@ -381,10 +412,25 @@ section {
 
 @media only screen and (max-width: 375px) {
   body {
-    width: 95%;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
     section {
       width: 100%;
       margin: 0;
+    }
+    .about-section {
+      .name {
+        margin: 0 40px;
+        padding-top: 0px;
+        h1 {
+          font-size: 30px;
+        }
+        h3 {
+          font-size: 15px;
+        }
+      }
+      
     }
     .contact-section {
       text-align: center;

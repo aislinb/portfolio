@@ -1,11 +1,10 @@
 import React from 'react'
 
 
-
 function Projects() {
   return (
     <section className="projects-section" id="projects-section">
-      <div className="heading">PROJECTS I HAVE WORKED ON</div>
+      <h3 className="heading">PROJECTS I HAVE WORKED ON</h3>
       <div className="projects-wrapper">
         <div className="project-block">
           <div className="project-title">MY NATOORA</div>
@@ -26,7 +25,7 @@ function Projects() {
           <div className="project-tech">React | Node.js | Express | MongoDB</div>
           <div className="project-description">A one-week group project buildling an events searching/reviewing platform. Full-stack MERN application using our own RESTful API. I built the registration/login pages using jwt_auth, and produced the venues index/show pages.</div>
           <div className="project-link">
-            <div className="project-link-block"><a href="https://django-api-natoora-project.herokuapp.com/" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" className="bi bi-link-45deg" viewBox="0 0 16 16">
+            <div className="project-link-block"><a href="https://my-2020-reimagined-ab.herokuapp.com" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" className="bi bi-link-45deg" viewBox="0 0 16 16">
               <path d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
               <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z"/>
             </svg></a>
@@ -40,7 +39,7 @@ function Projects() {
           <div className="project-tech">JavaScript | React Hooks | CSS | Express | Node.js</div>
           <div className="project-description">This was a pair-programmed hackathon over 48 hours where we built a word definition site using JavaScript, React Hooks, CSS, Express with Node.js, using 2 public APIs (Urban Dictionary & Classic).</div>
           <div className="project-link">
-            <div className="project-link-block"><a href="https://django-api-natoora-project.herokuapp.com/" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" className="bi bi-link-45deg" viewBox="0 0 16 16">
+            <div className="project-link-block"><a href="https://contra-dictionary.netlify.app/" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" className="bi bi-link-45deg" viewBox="0 0 16 16">
               <path d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
               <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z"/>
             </svg></a>
@@ -54,7 +53,7 @@ function Projects() {
           <div className="project-tech">HTML | CSS | JavaScript</div>
           <div className="project-description">Front-end web app using Vanilla JavaScript after 2 weeks in the course. The brief was to create a single page game in 10 days using JavaScript, HTML & CSS, in which I built a connect 4 two-player game.</div>
           <div className="project-link">
-            <div className="project-link-block"><a href="https://django-api-natoora-project.herokuapp.com/" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" className="bi bi-link-45deg" viewBox="0 0 16 16">
+            <div className="project-link-block"><a href="https://github.com/aislinb/sei-project-1" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" className="bi bi-link-45deg" viewBox="0 0 16 16">
               <path d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
               <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z"/>
             </svg></a>

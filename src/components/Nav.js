@@ -21,7 +21,7 @@ function Nav()  {
     <nav className="navbar is-fixed-top has-dropdown is-hoverable">
       <div className="container">
         <div className="navbar-brand">
-          <span className="title"><Link to="#about-section">💫</Link></span>
+          <Link to="#top"><button className="title"></button></Link>
           <span onClick={handleMenuToggle} className={`navbar-burger ${isOpen ? 'is-active' : ''}`}>
             <span></span>
             <span></span>

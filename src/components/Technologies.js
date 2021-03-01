@@ -1,11 +1,10 @@
 import React from 'react'
 
 
-
 function Technologies() {
   return (
     <section className="technologies-section" id="technologies-section">
-      <div className="heading">TECHNOLOGIES I LIKE USING</div>
+      <h3 className="heading">TECHNOLOGIES I LIKE USING</h3>
       <div className="technologies-wrapper">
         <div className="tech-block">
           <div className="tech-subtitle">TECH</div>
@@ -18,7 +17,7 @@ function Technologies() {
             <li>React</li>
             <li>Express</li>
             <li>Node.js</li>
-            <li>Python</li>
+            <li>Python</li>-
             <li>Django</li>
           </ul>
         </div>

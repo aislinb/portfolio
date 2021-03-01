@@ -11,6 +11,7 @@ function App() {
   
   return (
     <BrowserRouter>
+      <a name="top"></a>
       <Nav />
       <About />
       <Technologies />
