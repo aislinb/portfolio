@@ -16,7 +16,7 @@ body {
   height: 70px;
   // background-color: $brand-green;
   color: $brand-green;
-  max-width: 1000px;
+  // max-width: 1000px;
   margin: auto;
   box-shadow: 1px 1px blur;
   
@@ -39,7 +39,7 @@ body {
     margin: 10px 20px 10px 20px; 
     // * above will move the position of green circle within its navbar div *
     font-size: 40;
-    max-width: 1000px;
+    // max-width: 1000px;
     justify-content: space-between;
     .title {
       all: unset;
@@ -115,7 +115,7 @@ body {
 // BODY 
 
 section {
-  max-width: 1000px;
+  // max-width: 1000px;
   margin: auto;
   align-items: center;
   text-align: left;
@@ -131,10 +131,11 @@ section {
   display: flex;
   flex-direction: row;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 50px;
   // background-color: pink;
   padding-top: 20px;
   width: 100%;
+  max-width: 1000px;
   justify-content: space-evenly;
   flex-wrap: wrap;
 
@@ -157,9 +158,9 @@ section {
       
     }
     h3 {
-      padding-top: 20px;
+      // padding-top: 20px;
       font-size: 30px;
-      font-weight: 600;
+      // font-weight: 600;
     }
   }
   // .about-me {
@@ -173,9 +174,10 @@ section {
 .technologies-section {
   // background-color: black;
   background-color: $brand-green;
+  background-image: url('/images/leafy-background-overlay.jpg/');
   padding-top: 30px;
   margin-top: 30px;
-  
+  width: 100%;
   
 
   .heading {
@@ -193,20 +195,21 @@ section {
     max-width: 900px;
     display: flex;
     flex-direction: row;
-    margin: auto;
+    // margin: auto;
     flex-wrap: wrap;
     // align-content: center;
     padding-bottom: 50px;
     justify-content: flex-start;
-    margin: 0 50px;
+    margin: 0 auto;
 
     .tech-block {
       background-color: white;
       max-width: 200px;
       min-width: 150px;
       padding: 10px;
-      margin: 10px;
-      align-items: flex-end;
+      margin: 10px 10px 10px 15px;
+      justify-content: center;
+      align-items: space-evenly;
       color: white;
       min-height: 200px;
 
@@ -247,6 +250,7 @@ section {
   // background-color: red;
   color: $brand-green;
   padding-top: 100px;
+  max-width: 1000px;
 
   .heading {
     padding-bottom: 5px;
@@ -325,6 +329,20 @@ section {
 .contact-section {
   padding-top: 50px;
 
+  .h3 {
+    font-size: 30px;
+    
+  }
+  .heading {
+    padding-bottom: 5px;
+    font-size: 100%;
+    font-weight: normal;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+  }
+  
+
   .name {
     display: flex;
     justify-content: center;
@@ -361,7 +379,10 @@ section {
 // MEDIA QUERIES
 
 //media queries for index pages
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 950px) {
+  .navbar {
+    width: 100%;
+  }
 
   .about-section {
     div {
@@ -372,7 +393,7 @@ section {
     .technologies-wrapper {
     justify-content: flex-start;
     margin: auto;
-    width: 440px; 
+    width: 700px; 
     // align-items: flex-start;
     
   }
@@ -380,38 +401,44 @@ section {
     width: 50%;
     align-items: flex-start;
   }
-
-  
-  
+  .contact-wrapper {
+    margin: 0 auto;
+  }  
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 800px) {
 
   .about-section {
     div {
       width: 100%;
     }
     }
-
-  .technologies-wrapper {
+    
+    .technologies-wrapper {
     justify-content: flex-start;
-    margin: auto;
-    // max-width: 400px;
+    margin: 0 auto;
+    width: 90%; 
+    // align-items: center;
+    
   }
-  .tech-subsection {
-    width: 100%;
+  .tech-block {
+    width: 50%;
+    align-items: center;
   }
+
+  
   
 }
+
 @media only screen and (max-width: 625px) {
 
-  .technologies-wrapper {
-    justify-content: flex-start;
-    margin: auto;
-  }
-  .tech-subsection {
-    width: 100%;
-    margin: auto;
-  }
+  // .technologies-wrapper {
+  //   justify-content: flex-start;
+  //   margin: auto;
+  // }
+  // .tech-subsection {
+  //   width: 100%;
+  //   margin: auto;
+  // }
 
   .about-section {
   div {
@@ -420,6 +447,33 @@ section {
   }
 }
 
+@media only screen and (max-width: 550px) {
+  body {
+    width: 100%;
+  }
+
+  .about-section {
+    .name {
+      margin: 0 40px;
+      padding-top: 0px;
+      h1 {
+        font-size: 30px;
+      }
+      h3 {
+        font-size: 15px;
+      }
+    }
+  }
+  // .contact-wrapper {
+  //   width: 90%;
+  // }
+  .contact-section {
+    text-align: center;
+    .contact-wrapper {
+      margin: 0 auto;
+    }
+  }
+}
 @media only screen and (max-width: 375px) {
   body {
     width: 100%;
@@ -444,14 +498,16 @@ section {
     }
     .contact-section {
       text-align: center;
+      .contact-wrapper {
+        margin: 0 auto;
+      }
     }
     
     .technologies-wrapper {
       width: 100%;
-      justify-content: flex-start;
-      margin: auto;
       .tech-block {
         width: 80%;
+        margin-left: 40px;
       }
     }
   }

@@ -5,7 +5,7 @@ function Contact() {
   return (
     <section className="contact-section" id="contact-section">
       <div className="contact-wrapper">
-        <div className="heading">PLEASE GET IN TOUCH VIA ANY OF THE FOLLOWING:</div>
+        <h3 className="heading">PLEASE GET IN TOUCH VIA ANY OF THE FOLLOWING:</h3>
         <div className="contact-links">
           <div className="contact-link-block">
             <a href={`mailto:${'aislin.bamber@gmail.com'}`} target="_blank" rel="noopener noreferrer">
