@@ -4,6 +4,7 @@ import React from 'react'
 function Technologies() {
   return (
     <section className="technologies-section" id="technologies-section">
+      <br></br>
       <h3 className="heading">TECHNOLOGIES I LIKE USING</h3>
       <div className="technologies-wrapper">
         <div className="tech-block">

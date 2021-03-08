@@ -1,5 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/devicons/devicon@v2.9.0/devicon.min.css');
+
 
 // BRAND COLOURS
 $brand-green:  #59ac5d;
@@ -44,8 +46,8 @@ body {
     .title {
       all: unset;
       margin-left: 25px;
-      width: 25px;
-      height: 25px;
+      width: 20px;
+      height: 20px;
       background-color: $brand-green;
       color:$brand-green;
       border-radius: 50%;
@@ -53,8 +55,8 @@ body {
     }
     .title:hover {
       margin-left: 25px;
-      width: 25px;
-      height: 25px;
+      width: 20px;
+      height: 20px;
       background-color: $brand-dark-green;
       color:$brand-green;
       border-radius: 50%;
@@ -146,6 +148,7 @@ section {
   }
 
   .name {
+    transition: color 4s ease-out 100ms;
     // padding: 20px;
     // margin: 20px;
     // padding-left: 40px;
@@ -161,7 +164,14 @@ section {
       // padding-top: 20px;
       font-size: 30px;
       // font-weight: 600;
+      transition: color 4s ease-out 100ms;
     }
+  }
+  .name:hover {
+    color: $brand-dark-green;
+  }
+  .h3:hover {
+    color: $brand-green;
   }
   // .about-me {
   //   margin: 40px;
@@ -174,13 +184,17 @@ section {
 .technologies-section {
   // background-color: black;
   background-color: $brand-green;
-  background-image: url('/images/leafy-background-overlay.jpg/');
-  padding-top: 30px;
-  margin-top: 30px;
-  width: 100%;
+  background-image: url('../images/leafy-background-overlay.png');
+  background-size: cover;
+  // padding-top: 30px;
+  // margin-top: 30px;
   
+  background-repeat: no-repeat, no-repeat;
+  background-position: stretch;
 
   .heading {
+    margin-top: 35px;
+    padding-top: 30px;
     padding-bottom: 25px;
     font-size: 100%;
     font-weight: normal;
@@ -189,6 +203,38 @@ section {
     text-size-adjust: 100%;
     color: white;
   }
+
+  //  NEW TECH 
+
+  .tech-div {
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    color: white;
+    transition: color 2s ease-out 100ms;
+    i {
+      font-size: 60px;
+    }
+    
+    p {
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: solid 1px;
+      max-width: 100px;
+    }
+  }
+
+  .tech-div:hover {
+    color: rgb(212, 238, 163);
+    p {
+      margin-top: 10px;
+      padding-top: 0;
+      padding-bottom: 10px;
+      border-top: 0;
+      border-bottom: solid 1px;
+    }
+  }
+
 
   .technologies-wrapper {
 
@@ -270,59 +316,67 @@ section {
     margin: 0 auto;
     flex-wrap: wrap;
 
+    
+
     .project-block {
-    max-width: 400px;
-    min-width: 300px;
+    // max-width: 400px;
+    // min-width: 300px;
+    width: 400px;
     padding: 20px;
     margin: 20px;
     background-color: $brand-green;
     color: white;
 
-    .project-title {
-      display: block;
-      margin-block-start: 1.33em;
-      margin-block-end: 1.33em;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
-      font-weight: bold;
-    }
-    
-    
-    .project-tech {
-      display: block;
-      font-size: 0.83em;
-      margin-block-start: 1.67em;
-      margin-block-end: 1.67em;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
-      font-weight: bold;
-      color: $brand-dark-green;
+      .project-title {
+        display: block;
+        margin-block-start: 1.33em;
+        margin-block-end: 1.33em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+      }
       
-    }
-
-    .project-description {
-      text-align: left;
-    }
-
-    .project-link {
-      display: flex;
-      // align-items: center;
-      margin-top: 15px;
-      padding-bottom: 10px;
-      
-      .project-link-block {
-        height: 15px;
-        margin: 10px;
+      .project-tech {
+        display: block;
+        font-size: 0.83em;
+        margin-block-start: 1.67em;
+        margin-block-end: 1.67em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        color: $brand-dark-green;
         
-        svg:hover {
-          fill: $brand-dark-green;
+      }
 
+      .project-description {
+        text-align: left;
+      }
+
+      .project-link {
+        display: flex;
+        // align-items: center;
+        margin-top: 15px;
+        padding-bottom: 10px;
+        
+        .project-link-block {
+          height: 15px;
+          margin: 10px;
+          
+          svg:hover {
+            fill: $brand-dark-green;
+
+          }
         }
       }
     }
-  }
+
+    .project-carousel {
+      margin: 0 0 20px 0;
+      padding: 20px 0;
+      background-color: white;
     }
   }
+}
 
   //  GET IN TOUCH 
 
@@ -373,9 +427,23 @@ section {
   }
 }
 
-// (max-width: 440px)() {
-
+// CAROUSEL FLICKITY 
+// .carousel {
+//   autoPlay: 1500;
 // }
+.carousel-cell {
+  height: 160px;
+  width: 50%;
+  img {
+    max-width: 640px;
+    max-height: 480px;
+  }
+}
+.project-1-block {
+  background-color: $brand-green;
+}
+
+
 // MEDIA QUERIES
 
 //media queries for index pages
@@ -473,6 +541,17 @@ section {
       margin: 0 auto;
     }
   }
+  // .technologies-wrapper {
+  //   width: 100%;
+  //   margin: 40px;
+  //   .tech-block {
+  //     width: 80%;
+  //     margin: auto;
+  //     justify-content: center;
+  //     justify-content: space-around;
+  //     align-items: center;
+  //   }
+  // }
 }
 @media only screen and (max-width: 375px) {
   body {

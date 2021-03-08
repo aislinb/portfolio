@@ -3,9 +3,11 @@ import { BrowserRouter } from 'react-router-dom'
 
 import Nav from './components/Nav'
 import About from './components/About'
-import Technologies from './components/Technologies'
+import Technologies from './components/TechnologiesNew'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
+// import Carousel from './components/carousels/Carousel'
+
 
 function App() {
   
