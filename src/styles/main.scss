@@ -5,7 +5,8 @@
 
 // BRAND COLOURS
 $brand-green:  #59ac5d;
-$brand-dark-green:  #008037;
+$brand-green-trans:  RGBA(81,164,85,0.16);
+$brand-dark-green:  #59ac5d;
 $brand-navy:  #150941;
 
 body {
@@ -22,7 +23,6 @@ body {
   margin: auto;
   box-shadow: 1px 1px blur;
   
-
 
   .container {
     // max-width: 1000px;
@@ -373,8 +373,32 @@ section {
     .project-carousel {
       margin: 0 0 20px 0;
       padding: 20px 0;
-      background-color: white;
+      
+      width: 400px;
+      padding: 20px;
+      margin: 20px;
+      background-color: $brand-green-trans;
+      color: white;
+
+      div {
+        width: 100%;
+        height: 100%;
+      }
+      .carousel {
+        height: 100%;
+
+        .carousel-cell {
+
+          height: 100%;
+        }
+      }
+  
+      
     }
+    
+
+/* move page dots into carousel */
+.flickity-page-dots { bottom: 10px; }
   }
 }
 

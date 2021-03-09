@@ -9,7 +9,7 @@ function About() {
         <h3>Junior Software Engineer</h3>
       </div>
       <div className="about-me">
-          I am a linguist and analyst who is now pursuing a career in software engineering. I&apos;ve worked in tech-adjacent roles within sales and business operations, from start-ups to international corporations. This experience has honed my organisational skills and attention to detail, whilst instilling in me a curiosity to understand and learn such technologies myself. I am now looking for a dynamic working environment in which learning is at the core of its values.
+          I am a linguist and analyst pursuing a career in software engineering. I&apos;ve worked in tech-adjacent roles within sales and business operations, from start-ups to international corporations. As a fresh graduate from General Assembly&apos;s Software Engineering Immersive course, I&apos;m now looking for a junior dev role in a stimulating environment.
       </div>
     </section>
   )
