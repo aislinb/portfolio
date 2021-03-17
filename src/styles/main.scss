@@ -6,7 +6,7 @@
 // BRAND COLOURS
 $brand-green:  #59ac5d;
 $brand-green-trans:  RGBA(81,164,85,0.16);
-$brand-dark-green:  #59ac5d;
+$brand-dark-green:  #008037;
 $brand-navy:  #150941;
 
 body {
@@ -23,12 +23,6 @@ body {
   margin: auto;
   box-shadow: 1px 1px blur;
   
-
-  .container {
-    // max-width: 1000px;
-    // display: block;
-    justify-content: space-evenly;
-  }
 
   .is-active {
     margin-left: 20px;
@@ -149,13 +143,7 @@ section {
 
   .name {
     transition: color 4s ease-out 100ms;
-    // padding: 20px;
-    // margin: 20px;
-    // padding-left: 40px;
-    // margin: 40px;
-    // align-items: left;
-    // justify-content: flex-start;
-    // align-items: flex-start;
+    
     h1 {
       font-size: 50px;
       
@@ -182,13 +170,11 @@ section {
 //  TECH I LIKE
 
 .technologies-section {
-  // background-color: black;
   background-color: $brand-green;
   background-image: url('../images/leafy-background-overlay.png');
   background-size: cover;
   // padding-top: 30px;
   // margin-top: 30px;
-  
   background-repeat: no-repeat, no-repeat;
   background-position: stretch;
 
@@ -196,12 +182,13 @@ section {
     margin-top: 35px;
     padding-top: 30px;
     padding-bottom: 25px;
-    font-size: 100%;
+    font-size: 20px;
     font-weight: normal;
     line-height: 1.5;
     text-rendering: optimizeLegibility;
     text-size-adjust: 100%;
     color: white;
+    letter-spacing: 1px;
   }
 
   //  NEW TECH 
@@ -247,47 +234,8 @@ section {
     padding-bottom: 50px;
     justify-content: flex-start;
     margin: 0 auto;
-
-    .tech-block {
-      background-color: white;
-      max-width: 200px;
-      min-width: 150px;
-      padding: 10px;
-      margin: 10px 10px 10px 15px;
-      justify-content: center;
-      align-items: space-evenly;
-      color: white;
-      min-height: 200px;
-
-      .tech-subtitle {
-        font-size: 1em;
-        line-height: 1.5;
-        padding-left: 10px;
-        font-weight: bold;
-        margin-top: 20px;
-        color: $brand-dark-green;
-      }
-      
-      ul {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 5px;
-        align-items: center;
-        color: $brand-green;
-        font-size: 0.83em;
-        line-height: 2;
-        margin-top: 5px;
-        font-weight: bold;
-        li {
-          padding: 0 5px 0 5px;
-          // align-items: center;
-          // align-content: center;
-          justify-content: space-between;
-          
-        }
-      }
-    }
   }
+
 }
 
 //  PROJECTS I HAVE WORKED ON
@@ -300,7 +248,7 @@ section {
 
   .heading {
     padding-bottom: 5px;
-    font-size: 100%;
+    font-size: 20px;
     font-weight: normal;
     line-height: 1.5;
     text-rendering: optimizeLegibility;
@@ -405,19 +353,23 @@ section {
   //  GET IN TOUCH 
 
 .contact-section {
-  padding-top: 50px;
+  padding: 50px 50px 0 50px;
 
   .h3 {
     font-size: 30px;
-    
+    padding-left: 30px;
+    max-width: 400px;
+    padding: 20px;
+    margin: 20px;
   }
   .heading {
     padding-bottom: 5px;
-    font-size: 100%;
+    font-size: 20px;
     font-weight: normal;
     line-height: 1.5;
     text-rendering: optimizeLegibility;
     text-size-adjust: 100%;
+    
   }
   
 
@@ -487,12 +439,20 @@ section {
     margin: auto;
     width: 700px; 
     // align-items: flex-start;
-    
+    .tech-div {
+
+      margin: 10px;
+      padding: 5px;
+      max-width: 60px;
+      i {
+        font-size: 40px;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
   }
-  .tech-block {
-    width: 50%;
-    align-items: flex-start;
-  }
+  
   .contact-wrapper {
     margin: 0 auto;
   }  
@@ -512,30 +472,27 @@ section {
     // align-items: center;
     
   }
-  .tech-block {
-    width: 50%;
-    align-items: center;
-  }
-
-  
   
 }
 
 @media only screen and (max-width: 625px) {
 
-  // .technologies-wrapper {
-  //   justify-content: flex-start;
-  //   margin: auto;
-  // }
-  // .tech-subsection {
-  //   width: 100%;
-  //   margin: auto;
-  // }
+  .tech-div {
+    i {
+      font-size: 40px;
+    }
+  }
 
   .about-section {
   div {
     width: 100%;
   }
+  }
+
+  .contact-section {
+    width: 400px;
+    padding: 20px;
+    margin: 50px;
   }
 }
 
@@ -565,18 +522,9 @@ section {
       margin: 0 auto;
     }
   }
-  // .technologies-wrapper {
-  //   width: 100%;
-  //   margin: 40px;
-  //   .tech-block {
-  //     width: 80%;
-  //     margin: auto;
-  //     justify-content: center;
-  //     justify-content: space-around;
-  //     align-items: center;
-  //   }
-  // }
+  
 }
+
 @media only screen and (max-width: 375px) {
   body {
     width: 100%;
